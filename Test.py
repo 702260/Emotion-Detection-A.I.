@@ -44,10 +44,10 @@ while True:
         else:
             cv2.putText(frame,'No Face Found', (20,60),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3)
         print("\n\n")
-    cv2.imshow('Emotion Detector', frame)
-           if cv2.waitkey(1) & 0xFF == ord('q'):
+        cv2.imshow('Emotion Detector', frame)
+        if cv2.waitkey(1) & 0xFF == ord('q'):
                 break
 
-          cap.release()
-          cv2.destroyAllWindows()
+        cap.release()
+        cv2.destroyAllWindows()
                          
